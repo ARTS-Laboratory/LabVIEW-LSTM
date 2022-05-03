@@ -25,3 +25,21 @@ After installing the package a new palette should appear in the LabVIEW function
 
 ## Formatting .csv files
 The matrices of weights for a cell should be stored in separate csv files withn a folder. Each file is named in the format "matrix" + "gate" + ".csv". Matrices are "W" (kernel), "U" (recurrent kernel), and "b" (bias). Gates are "i", "f", "c", and "o". Therefore names are Wi.csv, Uo.csv, bf.csv, etc. The python function given in ``create_weight_folder.py`` converts the weights of a keras LSTM model to this format.
+
+
+## [Development workspace](development_workspace)
+Houses all the code used in building and developing the functions. 
+
+## [Package](package)
+Houses the published packages. See the latest package in "Releases".
+
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
