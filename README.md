@@ -1,5 +1,5 @@
 # LabVIEW-LSTM
-LabVIEW library for deploying LSTMS in LabVIEW and LabVIEW Real-Time. This library lets the user upload weights to cretae custom LSTM cell VIs that can easily be deployed onto LabVIEW or LabVIEW Real-Time. 
+LabVIEW library for deploying LSTMS in LabVIEW and LabVIEW Real-Time. This library lets the user upload weights to create custom LSTM cell VIs that can easily be deployed onto LabVIEW or LabVIEW Real-Time. 
 
 <p align="center">
 <img src="figures/single-LSTM-cell-use.PNG" alt="drawing" width="400"/> <br> 
