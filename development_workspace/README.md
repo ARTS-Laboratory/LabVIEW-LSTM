@@ -11,9 +11,10 @@ VIs visible from the function palette are "Create Dense Cell.vi", "Create LSTM C
 2. No longer takes transposed matrices as input.
 3. Still saves VI to package's folder.
 ## sigmoid.vi and tanh.vi
-Elementwise sigmoid and tanh functions. Piecewise approximations of the sigmoid and tanh functions have a small effect on the error of an LSTM cell. 
+Elementwise sigmoid and tanh functions.
 ### v1.0
 1. The linear constants right now are not optimal.
 2. Performance improvement can be gained by using a 'minimum cascade' implementation.
 ### v1.1
 1. Changed to optimal constants, use the minimum cascade.
+2. (v1.1.1) Changed to 'true' functions (not piecewise approximations). Showed little/no reduction in speed of forward pass.
