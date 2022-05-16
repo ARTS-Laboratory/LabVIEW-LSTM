@@ -31,5 +31,5 @@ def save_model_weights_as_csv(model, savpath = "./model_weights"):
     layer_path = savpath + "./dense_top./"
     if(not path.exists(layer_path)):
         os.mkdir(layer_path)    
-    savetxt(layer_path+"in_weights.csv",in_weights,delimiter=',')
-    savetxt(layer_path+"out_weights.csv",out_weights,delimiter=',')
+    savetxt(layer_path+"weights.csv",in_weights,delimiter=',')
+    savetxt(layer_path+"bias.csv",out_weights,delimiter=',')
