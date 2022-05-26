@@ -13,6 +13,7 @@ VIs visible from the function palette are "Create Dense Cell.vi", "Create LSTM C
 4. (v1.1.2) Fixed Create Dense Cell to include bias term
 ### v1.2
 1. Added GRU Cell (not tested, no python conversion function)
+2. (1.2.1) fixed issue with bias vectors being transposed.
 ## sigmoid.vi, tanh.vi, and ReLU.vi
 Elementwise sigmoid and tanh functions.
 ### v1.0
