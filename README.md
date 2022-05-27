@@ -47,7 +47,7 @@ This work is licensed under a
 
 Cite as:
 
-@Misc{Coble2021LabVIEWLSTM,  
+@Misc{Coble2022LabVIEWLSTM,  
 author = {Daniel Coble and Austin Downey},  
 title = {{LabVIEW-LSTM}},  
 year = {2022},  
