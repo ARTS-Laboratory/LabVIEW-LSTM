@@ -55,12 +55,5 @@ groups = {{ARTS-L}ab},
 url = {https://github.com/ARTS-Laboratory/LabVIEW-LSTM},  
 }
 
-@Misc{Downey2021Dataset2Dropbear,  
-  author = {Austin Downey and Jonathan Hong and Jacob Dodson and Michael Carroll and James Scheppegrell},  
-  month  = apr,  
-  title  = {Dataset-2-DROPBEAR-Acceleration-vs-Roller-Displacement},  
-  year   = {2020},  
-  groups = {High-Rate-SHM-Working-Group},  
-  url    = {https://github.com/High-Rate-SHM-Working-Group/Dataset-2-DROPBEAR-Acceleration-vs-Roller-Displacement},  
-}  
+
 
