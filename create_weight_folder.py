@@ -33,3 +33,12 @@ def save_model_weights_as_csv(model, savpath = "./model_weights"):
         os.mkdir(layer_path)    
     savetxt(layer_path+"weights.csv",in_weights,delimiter=',')
     savetxt(layer_path+"bias.csv",out_weights,delimiter=',')
+
+if __name__ == "__main__":
+    import tensorflow.keras as keras
+    model_filename = "./model_saves/modelname" # put saved model location here
+    out_filename = "./model_weights/weightloc" # where you want the weights saved
+    
+    model = keras.models.load_model(model_filename)
+    save_model_weights_as_csv(model, savpath=out_filename)
+    
