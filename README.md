@@ -49,6 +49,7 @@ Cite as:
 
 @Misc{Coble2022LabVIEWLSTM,  
 author = {Daniel Coble and Austin Downey},  
+howpublished = {GitHub},  
 title = {{LabVIEW-LSTM}},  
 year = {2022},  
 groups = {{ARTS-L}ab},  
