@@ -27,7 +27,12 @@ def save_model_weights_as_csv(model, savpath = "./model_weights"):
     
     #save dense top layer
     dense_top = model.layers[-1]
-    in_weights, out_weights = dense_top.get_weights()
+    dense_weights = dense_top.get_weights()
+    if(len(dense_weights) == 1): # no bias
+        dense_weights = dense_weights[0]
+        dense_bias = np.array([0])
+    else:
+        dense_weights, dense_bias = dense_weights
     layer_path = savpath + "./dense_top./"
     if(not path.exists(layer_path)):
         os.mkdir(layer_path)    
