@@ -63,20 +63,20 @@ url = {https://github.com/ARTS-Laboratory/LabVIEW-LSTM},
 
 ## Frequently Asked Questions (FAQ) for the LSTM LabVIEW Model
 
-#### 1. What does this LSTM implementation do in LabVIEW?
-The implementation produces a Virtual Instrument (VI) that computes one timestep of a Long Short-Term Memory (LSTM) network. The input is processed, and the output is passed through shift registers, which store and update the state vectors at each timestep. The output is a vector, with each element bounded between 0 and 1.
+#### 1. What does this library do?
+The package allows for pre-trained LSTM models to be deployed to a LabVIEW environment for inference. A VI is created to compute one timestep of an LSTM network. This allows inputs to be processed, and outputs created in a real-time framework where data can be accessed after every timestep.
 
 #### 2. How do I input my data into the LSTM model?
-If your data is stored in an Excel file, where each row represents a timestep, you will need to loop through each row. For each timestep, extract the input data from that row and transform it into a vector that can be processed by the LSTM VI. You can use a LabVIEW for-loop to iterate through the rows of data.
+Data is processed per timestep (not all at once). Within a loop, extract the input data and transform it into a vector that can be processed by the LSTM VI. If data is given in an Excel or CSV file, you can use a for-loop to iterate through the rows of data.
 
 #### 3. What does the output of the LSTM model look like?
-The output is a vector of values, typically bounded between 0 and 1. Depending on your application, you can transform this vector into a double or an array of doubles for further analysis or decision-making.
+At each timestep, the output is a vector of values bounded between 0 and 1. The library also contains an implementation of a dense layer, which is commonly used to aggegate an LSTM output to a single value. Depending on your application, you can transform this vector into a double or an array of doubles for further analysis or decision-making.
 
 #### 4. How are the weights of the LSTM cell generated?
-The weights are typically generated using a Python function that produces a folder of `.csv` weight files. These weights are usually taken from a Keras (Python) LSTM model. The folder of weights is then used by the `fill-lstm-template VI` in LabVIEW to create the LSTM cell with the appropriate weight matrices.
+For models trained with the Python `keras` library, a function is provided which takes a model and creates a properly formatted folder of `.csv` files containing model weights. The folder of weights is then used by the `fill-lstm-template` VI in LabVIEW to create the LSTM cell with the appropriate weight matrices.
 
 #### 5. Can I use weights from a source other than Keras?
-Yes, you can use weights from another source, but you would need to format them in a way that LabVIEW can interpret. The current implementation supports weights generated from Keras, but if you're using a different source, you will need to ensure the weights are in `.csv` format and compatible with the LabVIEW VI.
+Weights from other sources need to be formatted properly to be understood by the `fill-lstm-template` VI. The current implementation supports weights generated from Keras, but if you're using a different source, you will need to ensure the weights are in `.csv` format and compatible with the LabVIEW VI.
 
 #### 6. What should I do if I need help understanding the LSTM LabVIEW model?
 You can refer to the most recent paper on this topic:  
