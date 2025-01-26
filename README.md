@@ -52,6 +52,8 @@ This work is licensed under a
 
 Cite as:
 
+Daniel Coble and Austin Downey. LabVIEW-LSTM. GitHub, 2022. [Online]. Available: https://github.com/ARTS-Laboratory/LabVIEW-LSTM
+
 @Misc{Coble2022LabVIEWLSTM,  
 author = {Daniel Coble and Austin Downey},  
 howpublished = {GitHub},  
